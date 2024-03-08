@@ -66,7 +66,7 @@ class MedicalAssistantApp:
         file_path = os.path.join(PATH, uploaded_file.name)
         with open(file_path, "wb") as f:
             f.write(uploaded_file.getbuffer())
-        st.success(f"File '{uploaded_file.name}' saved in '{PATH}' folder.")
+        st.success(f"File '{uploaded_file.name}' saved.")
 
     @staticmethod
     def _initialize_loader():
